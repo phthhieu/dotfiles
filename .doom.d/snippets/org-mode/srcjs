@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: srcjs
+# uuid: srcjs
+# key: srcjs
+# --
+#+BEGIN_SRC js :cmd "babel-node" :results output
+`%`$0
+#+END_SRC
