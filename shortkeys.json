@@ -1,0 +1,13 @@
+[
+  {
+    "key": "ctrl+shift+'",
+    "action": "javascript",
+    "code": "location.href='org-protocol://capture?template=t&url=' + encodeURIComponent(location.href) + '&title=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(window.getSelection())",
+    "activeInInputs": true,
+    "blacklist": false,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  }
+]
