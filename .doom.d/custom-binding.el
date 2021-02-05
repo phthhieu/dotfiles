@@ -107,3 +107,13 @@ Returns:
 (map!
  :nv "<f6>"       #'multi-vterm-project
  )
+
+;; Ivy
+(map!
+ (:after ivy :map ivy-switch-buffer-map
+  "C-v" (general-simulate-key "M-o a v <return>")
+  "C-s" (general-simulate-key "M-o a s <return>"))
+ (:after ivy :map ivy-minibuffer-map
+  "C-v" (general-simulate-key "M-o a v <return>")
+  "C-s" (general-simulate-key "M-o a s <return>"))
+ )

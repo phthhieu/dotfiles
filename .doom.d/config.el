@@ -66,8 +66,8 @@
 (load! "eh/prodigy")
 ;; General config
 (load! "org-mode")
+(load! "ivy")
 (load! "custom-binding")
-
 ;; Open in fullscreen
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
