@@ -165,6 +165,11 @@ bar {
 }
 
 # ========START: Custom i3 key binding
+# Screenshot (require flameshot)
+bindsym $mod+p exec "flameshot gui"
+
+bindsym $mod+Shift+p exec "peek"
+# Screen recording (require: peek)
 
 # Toggle between dock mode and hide mode
 bindsym $mod+n bar mode toggle
