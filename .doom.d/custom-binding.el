@@ -111,9 +111,10 @@ Returns:
 ;; Ivy
 (map!
  (:after ivy :map ivy-switch-buffer-map
-  "C-v" (general-simulate-key "M-o a v <return>")
-  "C-s" (general-simulate-key "M-o a s <return>"))
+  :desc "Split & open vertically"   "C-c C-v" (general-simulate-key "M-o a v <return>")
+  :desc "Split & open horizontally" "C-c C-s" (general-simulate-key "M-o a s <return>"))
+
  (:after ivy :map ivy-minibuffer-map
-  "C-v" (general-simulate-key "M-o a v <return>")
-  "C-s" (general-simulate-key "M-o a s <return>"))
+  :desc "Split & open vertically"   "C-c C-v" (general-simulate-key "M-o a v <return>")
+  :desc "Split & open horizontally" "C-c C-s" (general-simulate-key "M-o a s <return>"))
  )
