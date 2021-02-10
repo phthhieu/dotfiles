@@ -198,4 +198,4 @@ exec --no-startup-id xset r rate 150 50
 exec --no-startup-id xrandr --output HDMI-A-0 --rotate left
 
 # Customize background: Require install feh
-exec_always --no-startup-id feh --bg-center ~/Downloads/i3-4k.jpeg
+exec_always --no-startup-id feh --bg-center ~/.config/i3/i3-4k.jpeg
