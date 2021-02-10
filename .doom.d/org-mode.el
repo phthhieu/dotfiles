@@ -19,7 +19,11 @@
 (defun add-card-id-to-title (title link)
   "Auto add prefix card it to task name"
   (let ((card-id (car (last (s-split "/" link)))))
-    (message "[%s] %s" card-id title)))
+    (if (string-match (regexp-quote "github") link)
+        (message "[Resolves #%s] %s" card-id title)
+      (message "[%s] %s" card-id title))
+    )
+  )
 
 (after! org
   (setq evil-org-key-theme '(navigation insert textobjects additional calendar todo))
