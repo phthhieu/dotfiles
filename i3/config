@@ -184,8 +184,8 @@ bindsym $mod+bracketright workspace next
 bindsym Mod1+Tab focus up
 
 # Change volumm
-bindsym $mod+plus exec "amixer -D pulse sset Master 1%+"
-bindsym $mod+minus exec "amixer -D pulse sset Master 1%-"
+bindsym $mod+plus exec "amixer -D pulse sset Master 5%+"
+bindsym $mod+minus exec "amixer -D pulse sset Master 5%-"
 
 # ========START: Custom startup
 # Start dropbox
