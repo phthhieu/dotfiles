@@ -27,7 +27,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
 ;; I wanna have bigger font
-(setq doom-font (font-spec :family "Hack" :size 20))
+(setq doom-font (font-spec :family "Hack" :size 22))
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -83,7 +83,7 @@
   (flycheck-disable-checker 'lsp-ui)
   (flycheck-select-checker 'javacript-eslint)
   )
-
+(setq lsp-disabled-clients '(eslint))
 (add-hook 'js2-mode-hook #'js-config)
 
 ;; I need more time to see what just happens
