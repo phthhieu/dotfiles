@@ -108,11 +108,6 @@ Returns:
  :nv "<f6>"       #'multi-vterm-project
  )
 
-;; Workspace
-(map!
- :nv "M-ESC"       #'+workspace/other
- )
-
 ;; Ivy
 (map!
  (:after ivy :map ivy-switch-buffer-map
