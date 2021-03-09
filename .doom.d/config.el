@@ -88,3 +88,5 @@
 
 ;; I need more time to see what just happens
 (setq evil-goggles-duration 1)
+
+(add-to-list 'auto-mode-alist '("\\.mdx\\'" . markdown-mode))
