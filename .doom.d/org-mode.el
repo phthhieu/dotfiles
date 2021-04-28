@@ -55,7 +55,7 @@
   (setq-default org-download-image-dir "./images"))
 
 (after! org-roam
-  (setq org-roam-db-location "~/Dropbox/notes/roam/org-roam.db")
+  (setq org-roam-db-location "~/Documents/org-roam.db")
   (setq org-roam-directory "~/Dropbox/notes")
   (setq org-roam-graph-viewer "/usr/bin/open")
   (setq deft-directory "~/Dropbox/notes")
