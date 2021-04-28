@@ -27,7 +27,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
 ;; I wanna have bigger font
-(setq doom-font (font-spec :family "Hack" :size 22))
+(setq doom-font (font-spec :family "Hack" :size 20))
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -61,6 +61,7 @@
 (add-hook! js-mode prettier-js-mode)
 (add-hook! web-mode prettier-js-mode)
 (add-hook! typescript-mode prettier-js-mode) ;; remember to install ts-ls by using lsp-install-server
+(add-hook! markdown-mode prettier-js-mode)
 
 ;; Load custom config for EH projects
 (load! "eh/prodigy")
