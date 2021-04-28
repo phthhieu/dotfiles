@@ -26,6 +26,15 @@
     :ready-message "sh")
 
   (prodigy-define-service
+    :name "Report board"
+    :command "yarn"
+    :args '("demo")
+    :cwd "~/Documents/workspace/EH/report-board"
+    :tags '(yarn)
+    :stop-signal 'int
+    :kill-process-buffer-on-stop t)
+
+  (prodigy-define-service
     :name "Frontend Core"
     :command "yarn"
     :args '("start")
@@ -53,45 +62,9 @@
     :kill-process-buffer-on-stop t)
 
   (prodigy-define-service
-    :name "Comment Service"
-    :command "bundle"
-    :args '("exec" "rails" "server" "-p" "1516")
-    :cwd "~/Documents/workspace/EH/comment"
-    :tags '(puma)
-    :stop-signal 'int
-    :kill-process-buffer-on-stop t)
-
-  (prodigy-define-service
-    :name "Re Tailwind"
-    :command "npm"
-    :args '("run" "dev")
-    :cwd "~/Documents/workspace/EH/re-tailwind"
-    :tags '(npm reasonml)
-    :stop-signal 'int
-    :kill-process-buffer-on-stop t)
-
-  (prodigy-define-service
-    :name "Pdf Editor"
-    :command "npm"
-    :args '("run" "dev")
-    :cwd "~/Documents/workspace/EH/pdf-editor"
-    :tags '(npm reasonml)
-    :stop-signal 'int
-    :kill-process-buffer-on-stop t)
-
-  (prodigy-define-service
-    :name "HD Playground"
-    :command "yarn"
-    :args '("playground:dev")
-    :cwd "~/Documents/workspace/EH/hero-design"
-    :tags '(yarn)
-    :stop-signal 'int
-    :kill-process-buffer-on-stop t)
-
-  (prodigy-define-service
     :name "HD Documentation"
     :command "yarn"
-    :args '("documentation:dev")
+    :args '("start")
     :cwd "~/Documents/workspace/EH/hero-design"
     :tags '(yarn)
     :stop-signal 'int
