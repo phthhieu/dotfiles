@@ -187,6 +187,8 @@ bindsym Mod1+Tab focus up
 bindsym $mod+plus exec "amixer -D pulse sset Master 5%+"
 bindsym $mod+minus exec "amixer -D pulse sset Master 5%-"
 
+bindsym $mod+Shift+d exec i3-input -F 'exec goldendict %s' -P 'Word: '
+
 # ========START: Custom startup
 # Start dropbox
 exec --no-startup-id dropbox start
