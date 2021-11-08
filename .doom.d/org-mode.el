@@ -76,10 +76,23 @@
   )
 
 ;; Config ob tmux
+;; (after! ob-tmux
+;;   (setq org-babel-default-header-args:tmux
+;;     '((:results . "silent")
+;;        (:session . "default")
+;;        (:socket  . nil)))
+;;   (setq org-babel-tmux-session-prefix "")
+;;   (setq org-babel-tmux-location "/usr/local/bin/tmux"))
+
 (after! ob-tmux
   (setq org-babel-default-header-args:tmux
     '((:results . "silent")
        (:session . "default")
        (:socket  . nil)))
-  (setq org-babel-tmux-session-prefix "")
-  (setq org-babel-tmux-location "/usr/local/bin/tmux"))
+
+  (setq org-babel-tmux-session-prefix "ob-")
+  (setq org-babel-tmux-terminal (if IS-MAC "iIterm" "xfce4-termimal"))
+  (setq org-babel-tmux-terminal-opts '("-t" "ob-tmux" "-e"))
+  (setq org-babel-tmux-location (if IS-MAC "/usr/local/bin/tmux" "/usr/bin/tmux"))
+
+  (load! "ob-tmux-async"))

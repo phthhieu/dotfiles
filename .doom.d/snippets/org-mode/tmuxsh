@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tmuxsh
+# uuid: tmuxsh
+# key: <tmuxsh
+# --
+#+BEGIN_SRC tmux :session default :lang sh
+$1
+#+END_SRC

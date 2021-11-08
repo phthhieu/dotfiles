@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tmuxrb
+# uuid: tmuxrb
+# key: <tmuxrb
+# --
+#+BEGIN_SRC tmux :session default :lang ruby
+$1
+#+END_SRC

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tmuxrbf
+# key: tmuxrbf
+# --
+
+#+BEGIN_SRC tmux :session default :lang ruby :file /tmp/$1.txt
+$2
+#+END_SRC

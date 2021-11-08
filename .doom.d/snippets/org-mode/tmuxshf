@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tmuxshf
+# uuid: tmuxshf
+# key: <tmuxshf
+# --
+#+BEGIN_SRC tmux :session default :lang sh :file /tmp/$0.txt
+$1
+#+END_SRC
