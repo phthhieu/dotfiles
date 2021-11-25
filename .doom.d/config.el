@@ -65,12 +65,14 @@
 
 ;; Load custom config for EH projects
 (load! "eh/prodigy")
+(load! "eh/secret")
 ;; General config
 (load! "org-mode")
 (load! "ivy")
 (load! "custom-binding")
 ;; Open in fullscreen
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
 
 ;; Use bundle exec to run rubocop
 (after! ruby-mode

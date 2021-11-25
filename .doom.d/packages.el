@@ -66,3 +66,5 @@
 
 ;; Better vterm
 (package! multi-vterm)
+
+(package! org-gcal)

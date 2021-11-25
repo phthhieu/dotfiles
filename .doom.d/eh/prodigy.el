@@ -69,4 +69,22 @@
     :tags '(yarn)
     :stop-signal 'int
     :kill-process-buffer-on-stop t)
+
+  (prodigy-define-service
+    :name "Mobile HD Lib"
+    :command "yarn"
+    :args '("start")
+    :cwd "~/Documents/workspace/EH/rn-hero-design"
+    :tags '(yarn)
+    :stop-signal 'int
+    :kill-process-buffer-on-stop t)
+
+  (prodigy-define-service
+    :name "Mobile HD Documentation"
+    :command "yarn"
+    :args '("start")
+    :cwd "~/Documents/workspace/EH/rn-hero-design"
+    :tags '(yarn)
+    :stop-signal 'int
+    :kill-process-buffer-on-stop t)
   )
