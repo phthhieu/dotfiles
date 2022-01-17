@@ -93,3 +93,14 @@
 (setq evil-goggles-duration 1)
 
 (add-to-list 'auto-mode-alist '("\\.mdx\\'" . markdown-mode))
+
+(dolist (fn '(definition references))
+  (fset (intern (format "+lookup/%s-other-window" fn))
+        (lambda (identifier &optional arg)
+          "TODO"
+          (interactive (list (doom-thing-at-point-or-region)
+                             current-prefix-arg))
+          (let ((pt (point)))
+            (switch-to-buffer-other-window (current-buffer))
+            (goto-char pt)
+            (funcall (intern (format "+lookup/%s" fn)) identifier arg)))))
